@@ -18,9 +18,10 @@ const updateOnlineStatus = () => {
     }
 }
 
-// window.addEventListener('online', updateOnlineStatus)
-// window.addEventListener('offline', updateOnlineStatus)
+window.addEventListener('online', updateOnlineStatus)
+window.addEventListener('offline', updateOnlineStatus)
 document.getElementById('checkStatusButton').addEventListener('click',()=>{
+    console.log('checking internet access status')
     updateOnlineStatus()
 })
-// updateOnlineStatus()
+updateOnlineStatus()
