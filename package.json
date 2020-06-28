@@ -21,5 +21,8 @@
     "electron": "^9.0.0",
     "electron-packager": "^14.2.1",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "is-online": "^8.4.0"
   }
 }

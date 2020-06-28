@@ -1,16 +1,15 @@
-const { app, Menu} = require('electron')
+const { app, Menu,ipcMain} = require('electron')
 const path = require('path')
 const MainWindow = require('./MainWindow')
 const AppTray = require('./AppTray')
+const isOnline = require('is-online')
 
 //Set Env
 process.env.Node_ENV = 'development'
-
 const isDev = process.env.Node_ENV !== 'production' ? true : false
 const isMac = process.platform === 'darwin' ? true : false
 
-let mainWindow
-let tray
+let mainWindow,tray
 
 function createMainWindow() {
   mainWindow = new MainWindow('./app/index.html', isDev)
@@ -29,8 +28,8 @@ app.whenReady().then(() => {
   // mainWindow.once('ready-to-show', () => {
   //   mainWindow.show()
   // })
-  mainWindow.on('closed', () => { mainWindow = null; })
 })
+
 
 const menu = [
 

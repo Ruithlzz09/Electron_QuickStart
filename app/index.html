@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>App Name</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <h1>My Electron App</h1>
-    <script src="./js/renderer.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>App Name</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h2>Are You Online??</h2>
+    <button id="checkStatusButton">Check Status</button>
+
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 id="h2-checking">Checking....</h2>
+      <h2 id="h2-online">You are Online</h2>
+      <h2 id="h2-offline">You are NOT Online</h2>
+    </section>
+  </main>
+  <footer>
+    <p>CopyRight &copy; | 2020</p>
+  </footer>
+
+  <script src="./js/renderer.js"></script>
+</body>
+
 </html>
