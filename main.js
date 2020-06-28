@@ -16,7 +16,7 @@ const menu = [
         {
           label: 'About',
           accelerator: "CmdOrCtrl+H",
-          click: createAboutWindow,
+          // click: createAboutWindow, Unavailable currently 
         }
       ]
     }] : []),
