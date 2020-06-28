@@ -2,7 +2,7 @@
   "name": "app",
   "productName": "App",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A minimal Electron application with TrayIcon support",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
