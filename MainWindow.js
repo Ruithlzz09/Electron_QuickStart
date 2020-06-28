@@ -23,4 +23,24 @@ class MainWindow extends BrowserWindow {
     }
 }
 
-module.exports = MainWindow
+class SplashWindow extends BrowserWindow {
+    constructor(file) {
+        super({
+            title: "App",
+            width: 400,
+            height: 400,
+            icon: `${__dirname}/assets/icons/icon_1024x1024.png`,
+            resizable: false,
+            backgroundColor: '#fff',
+            alwaysOnTop: true,
+            show: false,
+            frame: false,
+            movable: false
+            
+        })
+
+        this.loadFile(file)
+    }
+}
+
+module.exports = {MainWindow,SplashWindow}

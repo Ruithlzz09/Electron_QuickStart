@@ -6,7 +6,7 @@ class AppTray extends Tray {
         this.mainWindow = mainWindow
         this.contextMenu = Menu.buildFromTemplate([
             {
-                label: 'AppTitile',
+                label: 'AppTitle',
                 click: () => {
                     if (this.mainWindow.isVisible() === true) {
                         this.mainWindow.hide()
